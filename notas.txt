@@ -1,0 +1,82 @@
+let numeroSecreto = 1;
+let numeroUsuario = prompt("Me indicas un n�mero por favor:");
+
+console.log(numeroUsuario);
+
+if (numeroUsuario == numeroSecreto) {
+    alert('Acertaste el n�mero');
+}
+
+alert('Hola mundo');
+//alert mensaje a mostrars
+/*let mensajeDeBienvenida = 'Bienvenido a la aplicación';
+alert(mensajeDeBienvenida);
+*/
+
+let contraseniaDelSistema = "contraseniaPrueba!";
+
+let contrasenia = prompt("Ingrese la contraseña del sistema:");
+
+if (contrasenia == contraseniaDelSistema){
+    alert("Acceso al sistema garantizado");
+}
+
+/*let edad = prompt("Ingrese su edad:");
+
+if (edad >= 18) {
+  console.log("Eres mayor de edad.");
+} else {
+  console.log("Eres menor de edad.");
+}
+
+alert('Bienvenido al juego del número secreto');
+let intento = prompt('Elige un número entre 1 y 10');
+
+let numeroSecreto = 4;
+
+console.log(intento  == numeroSecreto);
+if (intento  == numeroSecreto) {
+    alert('Acertaste');
+} else {
+    alert('El número secreto era ' + numeroSecreto + 'y el inteento'+ intento);
+}
+*/
+
+let porcentajeDescuento = 0;
+
+let cantidadMillas = prompt("Ingrese la cantidad de millas");
+
+if (cantidadMillas > 30000) {
+    porcentajeDescuento = 20;
+    console.log (porcentajeDescuento)
+} else if (cantidadMillas > 5000) {
+    porcentajeDescuento = 10;
+    console.log (porcentajeDescuento)
+	
+} else {
+    porcentajeDescuento = 0;
+    console.log (porcentajeDescuento)
+
+}
+
+/*
+let contador = 1;
+
+while (contador < 4) {
+  console.log('Ejecutando la iteración ' + contador);
+  contador = contador + 1;
+}
+*/
+let qtdNumeros = prompt('Digite la cantidad de números para el cálculo del promedio:');
+let soma = 0;
+let contador = qtdNumeros;
+
+while(contador > 0){
+    let numero = parseInt(prompt('Digite el numero:'));
+    soma += numero;
+    contador = contador-1;
+}
+
+let promedio = soma / qtdNumeros;
+
+console.log(promedio);
